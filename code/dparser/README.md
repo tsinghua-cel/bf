@@ -1,2 +1,2 @@
 # dparser
-`dparser` is a automate tool to deploy bf components.
+`dparser` is an automated deployment tool for `bf`.
