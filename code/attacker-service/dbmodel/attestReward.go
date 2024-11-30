@@ -6,12 +6,12 @@ import (
 )
 
 type AttestReward struct {
-	ID             int64 `orm:"column(id)" db:"id" json:"id" form:"id"`                                                     //  任务类型id
-	Epoch          int64 `orm:"column(epoch)" db:"epoch" json:"epoch" form:"epoch"`                                         // epoch
-	ValidatorIndex int   `orm:"column(validator_index)" db:"validator_index" json:"validator_index" form:"validator_index"` // 验证者索引
-	HeadAmount     int64 `orm:"column(head_amount)" db:"head_amount" json:"head_amount" form:"head_amount"`                 // Head 奖励数量
-	TargetAmount   int64 `orm:"column(target_amount)" db:"target_amount" json:"target_amount" form:"target_amount"`         // Target 奖励数量
-	SourceAmount   int64 `orm:"column(source_amount)" db:"source_amount" json:"source_amount" form:"source_amount"`         // Source 奖励数量
+	ID             int64 `orm:"column(id)" db:"id" json:"id" form:"id"`                                                     
+	Epoch          int64 `orm:"column(epoch)" db:"epoch" json:"epoch" form:"epoch"`                                         
+	ValidatorIndex int   `orm:"column(validator_index)" db:"validator_index" json:"validator_index" form:"validator_index"`
+	HeadAmount     int64 `orm:"column(head_amount)" db:"head_amount" json:"head_amount" form:"head_amount"`                
+	TargetAmount   int64 `orm:"column(target_amount)" db:"target_amount" json:"target_amount" form:"target_amount"`        
+	SourceAmount   int64 `orm:"column(source_amount)" db:"source_amount" json:"source_amount" form:"source_amount"`        
 	//Head	Target	Source	Inclusion Delay	Inactivity
 }
 

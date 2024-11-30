@@ -6,14 +6,14 @@ import (
 )
 
 type BlockReward struct {
-	ID                     int64 `orm:"column(id)" db:"id" json:"id" form:"id"`                                                                                         //  任务类型id
-	Slot                   int64 `orm:"column(slot)" db:"slot" json:"slot" form:"slot"`                                                                                 // slot
-	ProposerIndex          int   `orm:"column(proposer_index)" db:"proposer_index" json:"proposer_index" form:"proposer_index"`                                         // 验证者索引
-	TotalAmount            int64 `orm:"column(total_amount)" db:"total_amount" json:"total_amount" form:"total_amount"`                                                 // Total 奖励数量
-	AttestationAmount      int64 `orm:"column(attestation_amount)" db:"attestation_amount" json:"attestation_amount" form:"attestation_amount"`                         // Target 奖励数量
-	SyncAggregateAmount    int64 `orm:"column(sync_aggregate_amount)" db:"sync_aggregate_amount" json:"sync_aggregate_amount" form:"sync_aggregate_amount"`             // Sync Aggregate 奖励数量
-	ProposerSlashingAmount int64 `orm:"column(proposer_slashing_amount)" db:"proposer_slashing_amount" json:"proposer_slashing_amount" form:"proposer_slashing_amount"` // Proposer Slashing 奖励数量
-	AttesterSlashingAmount int64 `orm:"column(attester_slashing_amount)" db:"attester_slashing_amount" json:"attester_slashing_amount" form:"attester_slashing_amount"` // Attester Slashing 奖励数量
+	ID                     int64 `orm:"column(id)" db:"id" json:"id" form:"id"`                                                                                         
+	Slot                   int64 `orm:"column(slot)" db:"slot" json:"slot" form:"slot"`                                                                                 
+	ProposerIndex          int   `orm:"column(proposer_index)" db:"proposer_index" json:"proposer_index" form:"proposer_index"`                                         
+	TotalAmount            int64 `orm:"column(total_amount)" db:"total_amount" json:"total_amount" form:"total_amount"`                                                 
+	AttestationAmount      int64 `orm:"column(attestation_amount)" db:"attestation_amount" json:"attestation_amount" form:"attestation_amount"`                         
+	SyncAggregateAmount    int64 `orm:"column(sync_aggregate_amount)" db:"sync_aggregate_amount" json:"sync_aggregate_amount" form:"sync_aggregate_amount"`             
+	ProposerSlashingAmount int64 `orm:"column(proposer_slashing_amount)" db:"proposer_slashing_amount" json:"proposer_slashing_amount" form:"proposer_slashing_amount"` 
+	AttesterSlashingAmount int64 `orm:"column(attester_slashing_amount)" db:"attester_slashing_amount" json:"attester_slashing_amount" form:"attester_slashing_amount"` 
 }
 
 func (BlockReward) TableName() string {

@@ -7,8 +7,8 @@ import (
 )
 
 type ChainReorg struct {
-	ID                    int64  `orm:"column(id)" db:"id" json:"id" form:"id"`                                                                                         //  任务类型id
-	Epoch                 int64  `orm:"column(epoch)" db:"epoch" json:"epoch" form:"epoch"`                                                                             // epoch
+	ID                    int64  `orm:"column(id)" db:"id" json:"id" form:"id"`                                                                                         
+	Epoch                 int64  `orm:"column(epoch)" db:"epoch" json:"epoch" form:"epoch"`                                                                             
 	Slot                  int64  `orm:"column(slot)" db:"slot" json:"slot" form:"slot"`                                                                                 // slot
 	Depth                 int    `orm:"column(depth)" db:"depth" json:"depth" form:"depth"`                                                                             // depth
 	OldBlockSlot          int64  `orm:"column(old_block_slot)" db:"old_block_slot" json:"old_block_slot" form:"old_block_slot"`                                         // old_block_slot
