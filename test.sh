@@ -40,7 +40,7 @@ testcase() {
 	echo "test done and result in $resultdir"
 }
 
-fullstrategy=( "all"  "attack-reorg"  "attack-sync"  "confuse"  "exante"  "random"  "sandwich"  "staircase"  "unrealized"  "withholding" "ext_exante"  "ext_sandwich"  "ext_staircase"  "ext_unrealized"  "ext_withholding")
+fullstrategy=( "all" "confuse"  "exante"  "random"  "sandwich"  "staircase"  "unrealized"  "withholding" "ext_exante"  "ext_sandwich"  "ext_staircase"  "ext_unrealized"  "ext_withholding")
 
 found=false
 for item in "${fullstrategy[@]}"; do
